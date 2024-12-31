@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Please fill out this form to help us understand your experience with our service.</p>
+
+        <form id="survey-form">
+            <!-- Name Field -->
+            <label id="name-label" for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <!-- Email Field -->
+            <label id="email-label" for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+            <!-- Number Field -->
+            <label id="number-label" for="number">Age:</label>
+            <input type="number" id="number" name="age" min="18" max="120" placeholder="Enter your age" required>
+
+            <!-- Dropdown Select -->
+            <label for="dropdown">What type of service did you use?</label>
+            <select id="dropdown" name="service" required>
+                <option value="web">Web Service</option>
+                <option value="mobile">Mobile App</option>
+                <option value="both">Both Web and Mobile</option>
+            </select>
+
+            <!-- Radio Buttons -->
+            <fieldset>
+                <legend>How satisfied are you with our service?</legend>
+                <label>
+                    <input type="radio" name="satisfaction" value="very-satisfied" required> Very Satisfied
+                </label>
+                <label>
+                    <input type="radio" name="satisfaction" value="satisfied" required> Satisfied
+                </label>
+                <label>
+                    <input type="radio" name="satisfaction" value="neutral" required> Neutral
+                </label>
+                <label>
+                    <input type="radio" name="satisfaction" value="dissatisfied" required> Dissatisfied
+                </label>
+                <label>
+                    <input type="radio" name="satisfaction" value="very-dissatisfied" required> Very Dissatisfied
+                </label>
+            </fieldset>
+
+            <!-- Checkboxes -->
+            <fieldset>
+                <legend>Which features did you use?</legend>
+                <label>
+                    <input type="checkbox" name="features" value="search"> Search
+                </label>
+                <label>
+                    <input type="checkbox" name="features" value="notifications"> Notifications
+                </label>
+                <label>
+                    <input type="checkbox" name="features" value="chat"> Chat Support
+                </label>
+                <label>
+                    <input type="checkbox" name="features" value="feedback"> Feedback Form
+                </label>
+            </fieldset>
+
+            <!-- Textarea -->
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" name="comments" placeholder="Enter any additional comments here..." rows="4" cols="50"></textarea>
+
+            <!-- Submit Button -->
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
+
+
